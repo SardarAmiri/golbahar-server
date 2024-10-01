@@ -38,6 +38,7 @@ Make sure you have the following installed:
 
 
 ## Environment Variables
+Create a .env file in the root directory of the backend project. Here are the required environment variables:
 
   PORT=5000
   MONGO_URI=your-mongodb-connection-string
