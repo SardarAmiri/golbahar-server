@@ -63,27 +63,35 @@ Ensure to replace the placeholder values (your-mongodb-connection-string, etc.) 
 You can test the API endpoints using tools like Postman or through the frontend once it is connected.
 
 ## API Documentation
+
 The following endpoints are available for user management, event management, bookings, and payment processing.
 
-Users API
-POST /api/users/register - Register a new user
-POST /api/users/login - User login
-GET /api/users/current-user - Get the current authenticated user
-GET /api/users/get-all-users - Fetch all users
-PUT /api/users/update-users - Update user information
-Events API
-POST /api/events/create-event - Create a new event
-PUT /api/events/update-event/:id - Update an existing event
-DELETE /api/events/delete-event/:id - Delete an event
-GET /api/events/get-events - Fetch all events
-GET /api/events/get-event/:id - Get a specific event by ID
-Bookings API
-POST /api/bookings/create-booking - Create a new booking
-GET /api/bookings/get-user-bookings - Get all bookings for the authenticated user
-GET /api/bookings/get-all-bookings - Get all bookings (Admin)
-POST /api/bookings/cancel-bookings - Cancel a booking
-Payments API
-POST /api/payments/create-payment-intent - Create a Stripe payment intent
+### Users API
+
+- **POST** `/api/users/register` - Register a new user
+- **POST** `/api/users/login` - User login
+- **GET** `/api/users/current-user` - Get the current authenticated user
+- **GET** `/api/users/get-all-users` - Fetch all users
+- **PUT** `/api/users/update-users` - Update user information
+
+### Events API
+
+- **POST** `/api/events/create-event` - Create a new event
+- **PUT** `/api/events/update-event/:id` - Update an existing event
+- **DELETE** `/api/events/delete-event/:id` - Delete an event
+- **GET** `/api/events/get-events` - Fetch all events
+- **GET** `/api/events/get-event/:id` - Get a specific event by ID
+
+### Bookings API
+
+- **POST** `/api/bookings/create-booking` - Create a new booking
+- **GET** `/api/bookings/get-user-bookings` - Get all bookings for the authenticated user
+- **GET** `/api/bookings/get-all-bookings` - Get all bookings (Admin)
+- **POST** `/api/bookings/cancel-bookings` - Cancel a booking
+
+### Payments API
+
+- **POST** `/api/payments/create-payment-intent` - Create a Stripe payment intent
 
 Refer to the routes/ directory for more information on all available routes.
 
